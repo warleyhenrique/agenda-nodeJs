@@ -9,5 +9,7 @@ const app = express();
 mongoose.connect("mongodb+srv://warleyhenrique:warleyhenrique@cluster0-nf5ir.gcp.mongodb.net/agenda?retryWrites=true&w=majority",{
     useNewUrlParser: true, useUnifiedTopology: true});
 
+/**Router */
+app.use('/', require("./src/routes"));
 
 app.listen(portServer);

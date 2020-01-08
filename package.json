@@ -5,7 +5,7 @@
   "author": "Warley Henrique <warley.henrique93@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js -L"
   },
   "dependencies": {
     "express": "^4.17.1",
