@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^4.13.20"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "name": "agenda-nodeJs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Warley Henrique <warley.henrique93@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
