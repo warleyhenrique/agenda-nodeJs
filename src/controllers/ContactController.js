@@ -11,21 +11,21 @@ module.exports = {
 
     async show(req, res){
         const contact = await Contact.findById(req.parms.id);
-        return res.send(contact);
+        return res.json(contact);
     },
 
     async store(req, res){
         const contact = await Contact.create(req.body);
-        return res.send(contact);
+        return res.json(contact);
     },
 
     async update(req, res){
         const contact = await Contact.findByIdAndUpdate(req.parms.id, req.body, {new: true});
-        return res.send(contact);
+        return res.json(contact);
     },
 
     async delete(req, res){
         await Contact.findByIdAndDelete(req.parms.id);
-        return res.send();
+        return res.json();
     }
 };

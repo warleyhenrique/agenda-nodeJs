@@ -9,9 +9,7 @@ app.use(express.json());
 
 /**Connect MongoDB */
 mongoose.connect("mongodb+srv://warleyhenrique:warleyhenrique@cluster0-nf5ir.gcp.mongodb.net/agenda?retryWrites=true&w=majority",{
-    useNewUrlParser: true, useUnifiedTopology: true}).then(()=>{
-        console.log("MongoDB conectado!")
-    });
+    useNewUrlParser: true, useUnifiedTopology: true});
 
 /**Load all models */
 requireDir("./src/models");
