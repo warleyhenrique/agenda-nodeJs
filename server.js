@@ -11,12 +11,11 @@ app.use(express.json());
 
 
 /**Connect MongoDB */
-mongoose.connect("mongodb://localhost/agenda",{
+mongoose.connect("mongodb+srv://warleyhenrique:warleyhenrique@cluster0-nf5ir.gcp.mongodb.net/agenda?retryWrites=true&w=majority",{
     useNewUrlParser: true, useUnifiedTopology: true}).then(()=>{
-        console.log("MongoDB conectado!")
-    }).catch((err)=>{
-        console.log('falha ao conectar ao mongoDb ' + err);
+        console.log("Mongo db connectado!");
     });
+
 
 /**Load all models */
 requireDir("./src/models");
